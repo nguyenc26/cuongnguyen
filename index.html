@@ -22,9 +22,9 @@
     <!--*************************************Main Navigation*************************************-->
     <header class="masthead">
       <!--Nav Bar-->
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <nav class="navbar navbar-expand-lg fixed-top">
         <button
-          class="navbar-toggler custom-toggler"
+          class="navbar-toggler custom-toggler collapsed ml-auto"
           type="button"
           data-toggle="collapse"
           data-target="#navbarNav"
@@ -68,7 +68,40 @@
         <h1>
           About Me
         </h1>
-        <div></div>
+        <p>
+          Bacon ipsum dolor amet short ribs brisket venison rump drumstick pig
+          sausage prosciutto chicken spare ribs salami picanha doner. Kevin
+          capicola sausage, buffalo bresaola venison turkey shoulder picanha ham
+          pork tri-tip meatball meatloaf ribeye. Doner spare ribs andouille
+          bacon sausage. Ground round jerky brisket pastrami shank. Bacon ipsum
+          dolor amet short ribs brisket venison rump drumstick pig sausage
+          prosciutto chicken spare ribs salami picanha doner. Kevin capicola
+          sausage, buffalo bresaola venison turkey shoulder picanha ham pork
+          tri-tip meatball meatloaf ribeye. Doner spare ribs andouille bacon
+          sausage. Ground round jerky brisket pastrami shank. Bacon ipsum dolor
+          amet short ribs brisket venison rump drumstick pig sausage prosciutto
+          chicken spare ribs salami picanha doner. Kevin capicola sausage,
+          buffalo bresaola venison turkey shoulder picanha ham pork tri-tip
+          meatball meatloaf ribeye. Doner spare ribs andouille bacon sausage.
+          Ground round jerky brisket pastrami shank.
+        </p>
+        <p>
+          Bacon ipsum dolor amet short ribs brisket venison rump drumstick pig
+          sausage prosciutto chicken spare ribs salami picanha doner. Kevin
+          capicola sausage, buffalo bresaola venison turkey shoulder picanha ham
+          pork tri-tip meatball meatloaf ribeye. Doner spare ribs andouille
+          bacon sausage. Ground round jerky brisket pastrami shank. Bacon ipsum
+          dolor amet short ribs brisket venison rump drumstick pig sausage
+          prosciutto chicken spare ribs salami picanha doner. Kevin capicola
+          sausage, buffalo bresaola venison turkey shoulder picanha ham pork
+          tri-tip meatball meatloaf ribeye. Doner spare ribs andouille bacon
+          sausage. Ground round jerky brisket pastrami shank. Bacon ipsum dolor
+          amet short ribs brisket venison rump drumstick pig sausage prosciutto
+          chicken spare ribs salami picanha doner. Kevin capicola sausage,
+          buffalo bresaola venison turkey shoulder picanha ham pork tri-tip
+          meatball meatloaf ribeye. Doner spare ribs andouille bacon sausage.
+          Ground round jerky brisket pastrami shank.
+        </p>
       </div>
     </section>
 
@@ -91,5 +124,21 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
+    <script>
+      $(document).ready(function () {
+        // Transition effect for navbar
+        $(window).scroll(function () {
+          // checks if window is scrolled more than 500px, adds/removes solid class
+          var height = $(".masthead").height();
+          var scrollTop = $(window).scrollTop();
+
+          if (scrollTop >= height - 40) {
+            $(".navbar").addClass("solid");
+          } else {
+            $(".navbar").removeClass("solid");
+          }
+        });
+      });
+    </script>
   </body>
 </html>

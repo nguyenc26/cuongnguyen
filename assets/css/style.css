@@ -2,9 +2,7 @@ body,
 html {
   height: 100%;
 }
-.bg-dark {
-  background-color: transparent !important;
-}
+
 /* The hero image */
 .masthead {
   background-image: url("../../assets/images/grayscale-photography-of-trees-1529881.jpg");
@@ -29,16 +27,8 @@ html {
   color: white;
 }
 
-.navbar-dark .navbar-nav .nav-link {
-  color: white;
-}
-
 .custom-toggler .navbar-toggler-icon {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
-}
-
-.custom-toggler.navbar-toggler {
-  border-color: rgb(255, 255, 255);
 }
 
 h1 {
@@ -49,6 +39,18 @@ img {
   height: 45%;
   width: 45%;
   padding: 7%;
+}
+
+.navbar a {
+  background-color: transparent;
+  transition: background-color 0.2s linear;
+  color: white;
+}
+
+.navbar.solid {
+  background-color: gray !important;
+  transition: background-color 0.2s linear;
+  box-shadow: 0 0 4px black;
 }
 
 /*Small devices (landscape phones, 576px and up)*/
