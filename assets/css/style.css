@@ -3,6 +3,11 @@ html {
   height: 100%;
 }
 
+.cuong {
+  font-family: "Permanent Marker", cursive;
+  font-size: 100px;
+}
+
 /* The hero image */
 .masthead {
   background-image: url("../../assets/images/grayscale-photography-of-trees-1529881.jpg");
@@ -51,6 +56,15 @@ img {
   background-color: gray !important;
   transition: background-color 0.2s linear;
   box-shadow: 0 0 4px black;
+}
+.about {
+  animation-delay: 3.5s;
+}
+.projects {
+  animation-delay: 3.3s;
+}
+.contact {
+  animation-delay: 3s;
 }
 
 /*Small devices (landscape phones, 576px and up)*/
