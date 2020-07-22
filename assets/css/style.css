@@ -75,4 +75,13 @@ img {
   .navbar-dark .navbar-toggler {
     margin-left: auto;
   }
+  .about {
+    animation-delay: 0s;
+  }
+  .projects {
+    animation-delay: 0s;
+  }
+  .contact {
+    animation-delay: 0s;
+  }
 }
