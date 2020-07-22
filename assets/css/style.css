@@ -59,31 +59,25 @@ img {
   transition: background-color 0.2s linear;
   box-shadow: 0 0 4px black;
 }
-.about {
-  animation-delay: 3.5s;
-}
-.projects {
-  animation-delay: 3.3s;
-}
-.contact {
-  animation-delay: 3s;
+
+@media (min-width: 992px) {
+  .about {
+    animation-delay: 3.5s;
+  }
+  .projects {
+    animation-delay: 3.3s;
+  }
+  .contact {
+    animation-delay: 3s;
+  }
 }
 
-/*Small devices (landscape phones, 576px and up)*/
+/*Small devices (landscape phones, 320px and up)*/
 @media (min-width: 320px) {
   .mr-auto {
     margin-left: auto !important;
   }
   .navbar-dark .navbar-toggler {
     margin-left: auto;
-  }
-  .about {
-    animation-delay: 0s;
-  }
-  .projects {
-    animation-delay: 0s;
-  }
-  .contact {
-    animation-delay: 0s;
   }
 }
