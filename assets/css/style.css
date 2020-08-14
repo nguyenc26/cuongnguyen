@@ -59,6 +59,64 @@ h1 {
   box-shadow: 0 0 4px black;
 }
 
+.main-content{
+  padding: 6%;
+  min-height: 100vh;
+  display: grid;
+}
+
+.portfolio {
+  display: grid;
+  height: 100%;
+  grid-template-rows: repeat(6, 1fr);
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 20px;
+}
+
+.portfolio-item {
+  background: green;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5em;
+  transition: all ease-in-out 300ms;
+  background-size: cover;
+  position: relative;
+}
+
+.portfolio-item:hover {
+  color: white;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.85);
+}
+
+.small {
+  grid-row: span 1;
+  grid-column: span 1;
+}
+.medium {
+  grid-row: span 2;
+  grid-column: span 2;
+}
+
+.large {
+  grid-row: span 3;
+  grid-column: span 3;
+}
+
+.tall {
+  grid-row: span 3;
+  grid-column: span 2;
+}
+
+.wide {
+  grid-row: span 2;
+  grid-column: span 3;
+}
+
+.two {
+  background-image: url(../images/pexels-dominika-roseclay-2682877.jpg);
+}
+
 #sticky-footer {
   flex-shrink: none;
 }
